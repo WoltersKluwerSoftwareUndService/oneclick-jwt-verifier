@@ -1,0 +1,18 @@
+*.class
+target/
+out/
+logs/
+classes/
+
+# git merge files
+*.orig
+
+# Package files
+*.jar
+
+# Editor #
+######################
+
+# Intellij project files
+.idea/
+*.iml
