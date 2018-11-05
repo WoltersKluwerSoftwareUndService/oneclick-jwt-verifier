@@ -1,12 +1,12 @@
-#Oneclick JWT verifier
+# Oneclick JWT verifier
 
-##Description
+## Description
 This tool makes a simple direct login with the provided data. 
 After the login was successful, the corresponding member is determined. 
 With the given information (member, secret) finally the JWT is verified. 
 The verification takes place on the basis of some exemplary claims, the Issuer and the Secret.
 
-##Usage
+## Usage
 
 Build the artifacts by calling `mvn package`
 
@@ -27,7 +27,7 @@ System-Variables
 ```
 export oneclick_client_secret=<JWT-Secret>
 export oneclick_jwt_secret=<Client-Secret>
-java -jar de.wk.jwt-verifier-1.0-SNAPSHOT-jar-with-dependencies.jar <OneClickUrl> <CustomerUrl> <CustomerUrl> <User> <Password>
+java -jar de.wk.jwt-verifier-1.0-SNAPSHOT-jar-with-dependencies.jar <OneClickUrl> <CustomerUrl> <ClientNumber> <User> <Password>
 
 export oneclick_client_secret=abc123
 export oneclick_jwt_secret=xyz789
